@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Dorsa';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dorsa'), url("../fonts/wolf.woff");
+}
+@font-face {
+  font-family: 'Norse';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Norse'), url("../fonts/norse.woff");
+}
+
+html {
+    height:100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg);
+    position: relative;
+    overflow: hidden;
+}
+div#plane {
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
+div#wrap {
+    padding: 0;
+    margin: 0px;
+    position: absolute;
+    right: 10%;
+    margin-left: -300px;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px 10px 0 0;
+    border: 0px;
+}
+div#wrap #mapBackground {
+    width: 600px;
+    position: absolute;
+}
+div#wrap h1 {
+    font-family: 'Norse', sans-serif;
+    /* font-variant: small-caps; */
+    line-height: 225px;
+    position: absolute;
+    font-size: 80pt;
+    display: block;
+    height: 225px;
+    margin: 0;
+    margin-left: 10px;
+    left: 200px;
+    top: 100px;
+}
+div#clock {
+    display: none;
+    position: relative;
+    margin: 0px;
+    padding: 15px;
+    width: 225px;
+    height: 225px;
+    float: left;
+}
+div#clock img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0px;
+    width: 225px;
+}
+div.time {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+    font-size: 45pt;
+    font-family: 'Dorsa', sans-serif;
+    box-sizing: border-box;
+    left: 160px;
+    -ms-transform: rotate(-21deg); /* IE 9 */
+    -webkit-transform: rotate(-21deg); /* Chrome, Safari, Opera */
+    transform: rotate(-21deg);
+}
+
+div.time span.timeSpan {
+    display:inline-block;
+    transform:scale(1,1.3); /* W3C */
+    -webkit-transform:scale(1,1.3); /* Safari and Chrome */
+    -moz-transform:scale(1,1.3); /* Firefox */
+    -ms-transform:scale(1,1.3); /* IE 9 */
+    -o-transform:scale(1,1.3); /* Opera */
+}
+div#flight {
+    bottom: 0px;
+    position: absolute;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding: 0;
+}
+div#flight img{
+    bottom: 0px;
+    margin-bottom: 0;
+    position: absolute;
+}
